@@ -232,6 +232,8 @@ p {
     font-size: 20px;
 }
 
+/* Courses CSS */
+
 .courses {
     margin: 7rem 0;
 }
@@ -519,4 +521,69 @@ p {
 
 .contact-content img {
     max-width: 210px;
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .carousel-item img {
+        height: 500px;
+    }
+    
+    .carousel-caption h2 {
+        color: var(--primary-color);
+        font-weight: 900;
+        font-size: 40px;
+    }
+    
+    .carousel-caption p {
+        color: var(--white-color);
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .course-item {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .about {
+        flex-direction: column;
+        padding: 0;
+    }
+    .about img {
+        width: 458px;
+    }
+
+    .join-now {
+        flex-direction: column;
+        padding: 20px;
+        margin: 5rem 0;
+    }
+
+    .join-now .content {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .join-now .content h2, p {
+        text-align: center;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
 }
