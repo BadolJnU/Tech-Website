@@ -31,6 +31,7 @@ ul,
 ol {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 /* Variable Define */
@@ -44,6 +45,7 @@ ol {
     --black-color: #000;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Quicksand', sans-serif;
+    --animationSpeed: 40s;
 }
 
 /* Initial CSS */
@@ -379,4 +381,142 @@ p {
 .team-list .main-btn {
     margin: 0 auto;
     display: block;
+}
+
+/* Feedback CSS */
+.feedback {
+    margin: 7rem 0;
+}
+
+.feedback h1 {
+    text-align: center;
+}
+
+.feedback h5 {
+    color: var(--text-gray);
+    font-size: 18px;
+    margin-top: 2rem;
+}
+
+/* FAQ CSS */
+.faq {
+    margin: 7rem 0;
+}
+
+.faq h1 {
+    text-align: center;
+}
+
+.faq h5 {
+    color: var(--text-gray);
+    font-size: 18px;
+    margin-top: 2rem;
+}
+
+
+
+/* Partner Companies CSS */
+
+.partner-companies {
+    margin: 7rem 0;
+}
+
+.partner-companies h1 {
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+}
+
+.partner-companies .slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.partner-companies .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.partner-companies .slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+/* Footer CSS */
+.contact-area {
+    background-color: var(--black-color);
+}
+
+.contact-content h1 {
+    margin-top: 5rem;
+}
+
+.contact-content h1 a {
+    text-decoration: none;
+}
+
+.contact-content p {
+    font-size: 15px;
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.contact-content p::after {
+    background: #353C46;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+}
+
+.contact-content h6 {
+    color: #8b9199;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-content span {
+    color: #353c47;
+    margin: 0 10px;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid #FAB702;
+    color: #FAB702;
+}
+
+.contact-content img {
+    max-width: 210px;
 }
