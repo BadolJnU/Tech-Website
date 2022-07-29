@@ -276,7 +276,7 @@ p {
 }
 
 .about-content h1 {
-    margin-top: 10rem;
+    margin-top: 7rem;
 }
 
 .about-content h2 {
@@ -324,7 +324,6 @@ p {
  }
 
  .register .white-btn {
-    margin-top: 35px;
     font-size: 18px;
     font-weight: 700;
     border-radius: 5px;
@@ -336,6 +335,46 @@ p {
     background-color: var(--white-color);
     padding: 0.3125rem 1.4375;
  }
+
+ /* Modal CSS */
+ .modal .modal-content.form-wrapper {
+    width: 100%;
+    height: 470px;
+    position: relative;
+    background: #f2f3f5;
+  }
+  .modal .modal-content.form-wrapper .icon-box {
+    height: 50px;
+    width: 50px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    margin: 0 auto;
+    position: absolute;
+    top: -4%;
+    left: -2%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal .modal-content.form-wrapper .close-box {
+    height: 50px;
+    width: 50px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    margin: 0 auto;
+    position: absolute;
+    top: -4%;
+    right: -2%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 
  /* Successful Team CSS */
  .motivation {
@@ -400,6 +439,54 @@ p {
     margin-top: 2rem;
 }
 
+.feedback #quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+.feedback #quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+.feedback #quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+.feedback #quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+.feedback #quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
+}
+.feedback .item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.feedback .item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
 /* FAQ CSS */
 .faq {
     margin: 7rem 0;
@@ -412,9 +499,13 @@ p {
 .faq h5 {
     color: var(--text-gray);
     font-size: 18px;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
+.faq .accordion {
+    margin: 2rem 8rem 0 8rem;
+
+}
 
 
 /* Partner Companies CSS */
@@ -566,11 +657,20 @@ p {
     .join-now .content h2, p {
         text-align: center;
     }
+    .faq .accordion {
+        margin: 2rem 1rem 0 1rem;
+    
+    }
+    .partner {
+        display: none;
+    }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-
+    .partner {
+        display: none;
+    }
 }
 
 /* // Medium devices (tablets, less than 992px) */
