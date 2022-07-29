@@ -41,7 +41,7 @@
                             <a class="nav-link" href="#faq">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Contact">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li><button type="button" class="main-btn" data-bs-toggle="modal" data-bs-target="#register">Register</button></li>
                     </ul>
@@ -99,7 +99,7 @@
     </header>
 
     <!-- Discover Courses Section -->
-    <section class="container">
+    <section class="container" id="courses">
         <div class="courses">
             <h1 class="text-center">Explore All the Popular Courses</h1>
             <p class="text-center">Have a dream? Start learning your way to it with courses from $11.99.</p>
@@ -173,7 +173,7 @@
         </div>
     </section>
     <!-- About Section -->
-    <section class="container">
+    <section class="container" id="about">
         <div class="about d-flex">
             <div class="w-50">
                 <img src="./images/working.png" alt="">
@@ -226,8 +226,7 @@
     <section class="container">
         <div class="team-list">
             <h1>Meet Our Successful<br>Students</h2>
-                <h4 class="motivation lh-base">It is a long established fact that a reader will be distracted by the<br>
-                    readable content of a page when looking at its layout</h4>
+                <h4 class="motivation lh-base">We share our Successful students profile who are now working as a developer<br> in top class companies in our country and abroad</h4>
                 <div class="team">
                     <div class="row">
                         <div class="col-lg-3 col-md-6 pt-1">
@@ -351,66 +350,42 @@
         </div>
     </section>
     <!-- Students Feedback Section -->
-    <section class="container">
+    <section class="container" id="feedback">
         <div class="feedback">
             <h1>Some Students Feedback</h1>
-            <h5 class="lh-base">It is a long established fact that a reader will be distracted by the readable<br>
-                content of a page when looking at its layout.</h5>
+            <h5 class="lh-base">Some students share their experience during course<br>
+                content of a page when looking at its time.</h5>
             <div class="feeback-slider">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-                            <!-- Carousel Slides / Quotes -->
-                            <div class="carousel-inner text-center">
-                                <!-- Quote 1 -->
-                                <div class="item active">
-                                    <blockquote>
-                                        <div class="row">
-                                            <div class="col-sm-8 col-sm-offset-2">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
-                                                <small>Someone famous</small>
-                                            </div>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                                <!-- Quote 2 -->
-                                <div class="item">
-                                    <blockquote>
-                                        <div class="row">
-                                            <div class="col-sm-8 col-sm-offset-2">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                                <small>Someone famous</small>
-                                            </div>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                                <!-- Quote 3 -->
-                                <div class="item">
-                                    <blockquote>
-                                        <div class="row">
-                                            <div class="col-sm-8 col-sm-offset-2">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
-                                                <small>Someone famous</small>
-                                            </div>
-                                        </div>
-                                    </blockquote>
-                                </div>
+                <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="testimonial4_slide">
+                                <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                                <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</p>
+                                <h4>Client 1</h4>
                             </div>
-                            <!-- Bottom Carousel Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg" alt="">
-                                </li>
-                                <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg" alt="">
-                                </li>
-                                <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
-                                </li>
-                            </ol>
-        
-                            <!-- Carousel Buttons Next/Prev -->
-                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-                            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial4_slide">
+                                <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</p>
+                                <h4>Client 2</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial4_slide">
+                                <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                                <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</p>
+                                <h4>Client 3</h4>
+                            </div>
                         </div>
                     </div>
+                    <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -418,11 +393,11 @@
 
     <!-- Frequently Asked Question -->
     <!-- Students Feedback Section -->
-    <section class="container">
+    <section class="container" id="faq">
         <div class="faq">
             <h1>Frequently Asked Questions</h1>
-            <h5 class="lh-base mb-2">It is a long established fact that a reader will be distracted by the readable<br>
-                content of a page when looking at its layout.</h5>
+            <h5 class="lh-base mb-2">Frequently asked questions (FAQ) help our students to find the important questions more<br> quickly and appropriately.
+                It is list of common questions</h5>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -540,17 +515,16 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="contact-content text-center">
                         <h1><a href="#">Info <span class="logo">Tech</span></a></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum </p>
+                        <p>A top tier software development team assisting owners and decision makers to implement digital initiatives to achieve lasting financial success</p>
                         <div class="hr"></div>
-                        <h6>1120 Lorem ipsum dolor sit amet, KC 179050, Chandigarh.</h6>
-                        <h6>+01 2345 6789 12<span>|</span>+01 2345 6789 12</h6>
+                        <h6>1120 Banassrree, Khilgaon, Dhaka.</h6>
+                        <h6>+880 174 8952 612<span>|</span>+880 194 8952 612</h6>
                         <div class="contact-social">
                             <ul>
-                                <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a class="hover-target" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a class="hover-target" href=""><i class="fab fa-github"></i></a></li>
-                                <li><a class="hover-target" href=""><i class="fab fa-behance"></i></a></li>
-                                <li><a class="hover-target" href=""><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a class="hover-target" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="hover-target" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a class="hover-target" href="https://github.com/"><i class="fab fa-github"></i></a></li>
+                                <li><a class="hover-target" href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
                             </ul>
                         </div>
                     </div>

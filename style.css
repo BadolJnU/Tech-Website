@@ -439,54 +439,49 @@ p {
     margin-top: 2rem;
 }
 
-.feedback #quote-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 60px;
-}
-.feedback #quote-carousel .carousel-control {
-    background: none;
-    color: #CACACA;
-    font-size: 2.3em;
-    text-shadow: none;
-    margin-top: 30px;
-}
-.feedback #quote-carousel .carousel-indicators {
-    position: relative;
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    margin-top: 20px;
-    margin-right: -19px;
-}
-.feedback #quote-carousel .carousel-indicators li {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    opacity: 0.4;
-    overflow: hidden;
-    transition: all .4s ease-in;
-    vertical-align: middle;
-}
-.feedback #quote-carousel .carousel-indicators .active {
-    width: 128px;
-    height: 128px;
-    opacity: 1;
-    transition: all .2s;
-}
-.feedback .item blockquote {
-    border-left: none;
-    margin: 0;
-}
-.feedback .item blockquote p:before {
-    content: "\f10d";
-    font-family: 'Fontawesome';
-    float: left;
-    margin-right: 10px;
+/*-----Testimonial-------*/
+
+.feeback-slider {
+    border-radius: 0;
+    box-shadow: 5px 5px 15px var(--secondary-color);
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
 }
 
+.testimonial4_slide{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.testimonial4_slide img {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 136px;
+    height: 136px;
+    margin: auto;
+    display: block;
+    color: #f2f2f2;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+/* ------testimonial  close-------*/
 /* FAQ CSS */
 .faq {
     margin: 7rem 0;
@@ -664,10 +659,59 @@ p {
     .partner {
         display: none;
     }
+    .testimonial4_slide img {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .carousel-item img {
+        height: 500px;
+    }
+    
+    .carousel-caption h2 {
+        color: var(--primary-color);
+        font-weight: 900;
+        font-size: 40px;
+    }
+    
+    .carousel-caption p {
+        color: var(--white-color);
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .course-item {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .about {
+        flex-direction: column;
+        padding: 0;
+    }
+    .about img {
+        width: 458px;
+    }
+
+    .join-now {
+        flex-direction: column;
+        padding: 20px;
+        margin: 5rem 0;
+    }
+
+    .join-now .content {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .join-now .content h2, p {
+        text-align: center;
+    }
+    .faq .accordion {
+        margin: 2rem 1rem 0 1rem;
+    
+    }
     .partner {
         display: none;
     }
@@ -675,7 +719,58 @@ p {
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    .carousel-item img {
+        height: 600px;
+    }
+    
+    .carousel-caption h2 {
+        color: var(--primary-color);
+        font-weight: 900;
+        font-size: 50px;
+    }
+    
+    .carousel-caption p {
+        color: var(--white-color);
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .course-item {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .about {
+        flex-direction: column;
+        padding: 0;
+    }
+    .about img {
+        width: 697px;
+    }
 
+    .join-now {
+        flex-direction: column;
+        padding: 20px;
+        margin: 5rem 0;
+    }
+
+    .join-now .content {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .join-now .content h2, p {
+        text-align: center;
+    }
+    .faq .accordion {
+        margin: 2rem 0.5rem 0 0.5rem;
+    
+    }
+    .partner {
+        display: none;
+    }
+    .testimonial4_slide img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 /* // Large devices (desktops, less than 1200px) */
